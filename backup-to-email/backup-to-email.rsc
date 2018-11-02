@@ -20,7 +20,7 @@
 # set to true if you want a configuration script file
 :local wantConfigurationScript true
 
-# set filename prefix i.e. (company name)
+# set filename prefix (i.e. company name)
 :local filenamePrefix "auto-backup"
 
 # CONFIGURATION BLOCK ENDS HERE
