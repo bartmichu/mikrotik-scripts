@@ -9,7 +9,7 @@
 :local emailRecipient "john.doe@example.com"
 
 # set email subject line
-:local emailSubject "MikroTik backup";
+:local emailSubject "MikroTik backup"
 
 # set email body
 :local emailBody "Please find attached..."
