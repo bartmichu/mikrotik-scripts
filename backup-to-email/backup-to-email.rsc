@@ -28,7 +28,11 @@
 
 
 :local attachmentList value=[:toarray ""]
-:local filename value=($filenamePrefix . "_" . [:system identity get name] . "_" . [:system package update get installed-version])
+
+:local filename value=([:system identity get name] . "_" . [:system package update get installed-version])
+:if ([:len $filenamePrefix]>0) do={
+  :set filename ($filenamePrefix . "_" . $filename)
+}
 
 :if ($wantBackupFile = true) do={
   /system backup save name=($filename . ".backup")
