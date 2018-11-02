@@ -20,14 +20,15 @@
 # set to true if you want a configuration script file
 :local wantConfigurationScript true
 
-# set filename
-:local filename "auto_backup"
+# set filename prefix i.e. (company name)
+:local filenamePrefix "auto-backup"
 
 # CONFIGURATION BLOCK ENDS HERE
 #---------------------------------------------------------------------
 
 
 :local attachmentList value=[:toarray ""]
+:local filename value=($filenamePrefix . "_" . [:system identity get name] . "_" . [:system package update get installed-version])
 
 :if ($wantBackupFile = true) do={
   /system backup save name=($filename . ".backup")
