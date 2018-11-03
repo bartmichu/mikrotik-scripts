@@ -30,7 +30,7 @@
 :local attachmentList value=[:toarray ""]
 :local filename value=([/system identity get name] . "_" . [/system package update get installed-version])
 
-:if ([:len $filenamePrefix]>0) do={
+:if ([:len $filenamePrefix] > 0) do={
   :set filename ($filenamePrefix . "_" . $filename)
 }
 
@@ -46,6 +46,6 @@
   :set attachmentList ($attachmentList, ($filename . ".rsc"))
 }
 
-:if ([:len $attachmentList]>0) do={
+:if ([:len $attachmentList] > 0) do={
   /tool e-mail send to=$emailRecipient subject=$emailSubject body=$emailBody file=$attachmentList
 }
