@@ -29,7 +29,7 @@
 
 :local attachmentList value=[:toarray ""]
 
-:local filename value=([:system identity get name] . "_" . [:system package update get installed-version])
+:local filename value=([/system identity get name] . "_" . [/system package update get installed-version])
 :if ([:len $filenamePrefix]>0) do={
   :set filename ($filenamePrefix . "_" . $filename)
 }
