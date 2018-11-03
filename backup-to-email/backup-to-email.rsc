@@ -36,13 +36,13 @@
 
 :if ($wantBackupFile = true) do={
   /system backup save name=($filename . ".backup")
-  :delay 00:00:10
+  :delay 10s
   :set attachmentList ($attachmentList, ($filename . ".backup"))
 }
 
 :if ($wantConfigurationScript = true) do={
   /export file=($filename . ".rsc")
-  :delay 00:00:10
+  :delay 10s
   :set attachmentList ($attachmentList, ($filename . ".rsc"))
 }
 
