@@ -18,10 +18,10 @@
 :local emailBody "Please find attached..."
 
 # set to true if you want a binary backup file
-:local wantBackupFile true
+:local sendBackupFile true
 
 # set to true if you want a configuration script file
-:local wantConfigurationScript true
+:local sendConfigurationScript true
 
 # set filename prefix (i.e. company name)
 :local filenamePrefix "auto-backup"
@@ -37,13 +37,13 @@
   :set filename ($filenamePrefix . "_" . $filename)
 }
 
-:if ($wantBackupFile = true) do={
+:if ($sendBackupFile = true) do={
   /system backup save name=($filename . ".backup")
   :delay 10s
   :set attachmentList ($attachmentList, ($filename . ".backup"))
 }
 
-:if ($wantConfigurationScript = true) do={
+:if ($sendConfigurationScript = true) do={
   /export file=($filename . ".rsc")
   :delay 10s
   :set attachmentList ($attachmentList, ($filename . ".rsc"))
