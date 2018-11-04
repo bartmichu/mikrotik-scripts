@@ -11,6 +11,9 @@
 # set email subject line
 :local emailSubject "MikroTik update available"
 
+# set to true if you want the subject line prefixed with system identity
+:local putIdentityInSubject true
+
 # set email body
 :local emailBody "System or firmware update is available for this device."
 
@@ -34,5 +37,8 @@
 }
 
 :if ($isUpdateAvailable = true) do={
+  :if ($putIdentityInSubject = true) do={
+    :set emailSubject ([/system identity get name] . ": " . $emailSubject)
+  }
   /tool e-mail send to=$emailRecipient subject=$emailSubject body=$emailBody
 }
