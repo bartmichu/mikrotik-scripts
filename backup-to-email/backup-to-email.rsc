@@ -12,7 +12,7 @@
 :local emailSubject "MikroTik backup"
 
 # set to true if you want the subject line prefixed with system identity
-:local putIdentityInSubject true
+:local addIdentityToSubject true
 
 # set email body
 :local emailBody "Please find attached..."
@@ -50,7 +50,7 @@
 }
 
 :if ([:len $attachmentList] > 0) do={
-  :if ($putIdentityInSubject = true) do={
+  :if ($addIdentityToSubject = true) do={
     :set emailSubject ([/system identity get name] . ": " . $emailSubject)
   }
   /tool e-mail send to=$emailRecipient subject=$emailSubject body=$emailBody file=$attachmentList
