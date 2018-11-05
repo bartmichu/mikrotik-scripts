@@ -1,4 +1,4 @@
-# backup-to-email ver. 1.3
+# backup-to-email ver. 1.4
 # Required policies: ftp, read, policy, sensitive, test
 
 
