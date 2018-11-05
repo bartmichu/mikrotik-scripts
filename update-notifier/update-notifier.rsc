@@ -1,5 +1,5 @@
 # update-notifier ver. 0.1 EXPERIMENTAL
-# Required policies: TBD
+# Required policies: read,policy,write,test
 
 
 #---------------------------------------------------------------------
