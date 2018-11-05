@@ -42,3 +42,5 @@
   }
   /tool e-mail send to=$emailRecipient subject=$emailSubject body=$emailBody
 }
+
+/log info "update-notifier script completed"

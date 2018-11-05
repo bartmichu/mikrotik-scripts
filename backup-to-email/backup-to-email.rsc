@@ -55,3 +55,5 @@
   }
   /tool e-mail send to=$emailRecipient subject=$emailSubject body=$emailBody file=$attachmentList
 }
+
+/log info "backup-to-email script completed"
