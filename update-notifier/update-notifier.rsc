@@ -1,4 +1,4 @@
-# update-notifier ver. 0.1 EXPERIMENTAL
+# update-notifier ver. 1.0
 # Required policies: read,policy,write,test
 
 
