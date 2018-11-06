@@ -1,4 +1,4 @@
-# update-notifier ver. 1.0
+# update-monitor ver. 1.0
 # Required policies: read,policy,write,test
 
 
@@ -43,4 +43,4 @@
   /tool e-mail send to=$emailRecipient subject=$emailSubject body=$emailBody
 }
 
-/log info "update-notifier script completed"
+/log info "update-monitor script completed"
