@@ -1,4 +1,4 @@
-# update-monitor ver. 1.0
+# update-monitor ver. 1.1
 # Required policies: read,policy,write,test
 
 
@@ -42,7 +42,7 @@
   :if ($addIdentityToSubject = true) do={
     :set emailSubject ([/system identity get name] . ": " . $emailSubject)
   }
-  
+
   /tool e-mail send to=$emailRecipient subject=$emailSubject body=$emailBody
 }
 
