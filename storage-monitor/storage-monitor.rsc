@@ -1,5 +1,5 @@
 # storage-monitor ver. 0.1 EXPERIMENTAL
-# Required policies: TBD
+# Required policies: ftp, read, policy, sensitive, test
 
 
 #---------------------------------------------------------------------
@@ -32,7 +32,7 @@
   :if ($addIdentityToSubject = true) do={
     :set emailSubject ([/system identity get name] . ": " . $emailSubject)
   }
-  
+
   /tool e-mail send to=$emailRecipient subject=$emailSubject body=$emailBody
 }
 
