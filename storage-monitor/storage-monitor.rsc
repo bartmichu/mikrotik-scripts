@@ -1,4 +1,4 @@
-# storage-monitor ver. 0.1 EXPERIMENTAL
+# storage-monitor ver. 1.0
 # Required policies: ftp, read, policy, sensitive, test
 
 
