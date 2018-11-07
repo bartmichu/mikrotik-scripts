@@ -28,9 +28,11 @@
 
 :if ($usage > $usageThreshold) do={
   /log info "storage-monitor: threshold exceeded condition"
+
   :if ($addIdentityToSubject = true) do={
     :set emailSubject ([/system identity get name] . ": " . $emailSubject)
   }
+  
   /tool e-mail send to=$emailRecipient subject=$emailSubject body=$emailBody
 }
 
