@@ -37,6 +37,7 @@
 }
 
 :if ($isUpdateAvailable = true) do={
+  /log info "update-monitor: system or firmware update available"
   :if ($addIdentityToSubject = true) do={
     :set emailSubject ([/system identity get name] . ": " . $emailSubject)
   }

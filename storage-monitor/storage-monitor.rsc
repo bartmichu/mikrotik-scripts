@@ -27,6 +27,7 @@
 :local usage value=(100 - ((100 * [/system resource get free-hdd-space]) / [/system resource get total-hdd-space]))
 
 :if ($usage > $usageThreshold) do={
+  /log info "storage-monitor: threshold exceeded condition"
   :if ($addIdentityToSubject = true) do={
     :set emailSubject ([/system identity get name] . ": " . $emailSubject)
   }
