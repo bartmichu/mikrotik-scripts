@@ -1,4 +1,6 @@
 # backup-to-email ver. 1.4
+# https://github.com/bartmichu/mikrotik-scripts/tree/master/backup-to-email
+#
 # Required policies: ftp, read, policy, sensitive, test
 
 

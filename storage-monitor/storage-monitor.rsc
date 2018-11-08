@@ -1,4 +1,6 @@
 # storage-monitor ver. 1.0
+# https://github.com/bartmichu/mikrotik-scripts/tree/master/storage-monitor
+#
 # Required policies: ftp, read, policy, sensitive, test
 
 
