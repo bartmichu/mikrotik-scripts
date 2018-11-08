@@ -5,16 +5,17 @@
 #---------------------------------------------------------------------
 # CONFIGURATION BLOCK STARTS HERE
 
-# set recipient email address
+# set recipient email address between quotes
 :local emailRecipient "john.doe@example.com"
 
-# set email subject line
+# set email subject line between quotes
 :local emailSubject "MikroTik update available"
 
-# set to true if you want the subject line prefixed with system identity
+# do you want the subject line prefixed with a system identity?
+# set to true or false without quotes
 :local addIdentityToSubject true
 
-# set email body
+# set email body between quotes
 :local emailBody "System or firmware update is available for this device."
 
 # CONFIGURATION BLOCK ENDS HERE

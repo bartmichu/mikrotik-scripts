@@ -5,25 +5,28 @@
 #---------------------------------------------------------------------
 # CONFIGURATION BLOCK STARTS HERE
 
-# set recipient email address
+# set recipient email address between quotes
 :local emailRecipient "john.doe@example.com"
 
-# set email subject line
+# set email subject line between quotes
 :local emailSubject "MikroTik backup"
 
-# set to true if you want the subject line prefixed with system identity
+# do you want the subject line prefixed with a system identity?
+# set to true or false without quotes
 :local addIdentityToSubject true
 
-# set email body
+# set email body between quotes
 :local emailBody "Please find attached..."
 
-# set to true if you want a binary backup file
+# do you want a binary backup file?
+# set to true or false without quotes
 :local sendBackupFile true
 
-# set to true if you want a configuration script file
+# do you want a configuration script file?
+# set to true or false without quotes
 :local sendConfigurationScript true
 
-# set filename prefix (i.e. company name)
+# set filename prefix (i.e. company name) between quotes
 :local filenamePrefix "auto-backup"
 
 # CONFIGURATION BLOCK ENDS HERE
