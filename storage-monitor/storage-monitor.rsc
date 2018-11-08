@@ -38,4 +38,4 @@
   /tool e-mail send to=$emailRecipient subject=$emailSubject body=$emailBody
 }
 
-/log info "storage-monitor: script completed"
+#/log info "storage-monitor: script completed"

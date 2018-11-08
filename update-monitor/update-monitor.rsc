@@ -47,4 +47,4 @@
   /tool e-mail send to=$emailRecipient subject=$emailSubject body=$emailBody
 }
 
-/log info "update-monitor: script completed"
+#/log info "update-monitor: script completed"
