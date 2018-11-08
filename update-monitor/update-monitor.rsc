@@ -1,4 +1,4 @@
-# update-monitor ver. 1.1
+# update-monitor ver. 1.2
 # https://github.com/bartmichu/mikrotik-scripts/tree/master/update-monitor
 #
 # Required policies: read,policy,write,test
