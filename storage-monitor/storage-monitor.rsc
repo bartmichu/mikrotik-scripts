@@ -20,7 +20,7 @@
 # set email body between quotes
 :local emailBody "Used HDD space threshold is exceeded."
 
-# what is the threshold for used space (percentage)?
+# used space threshold (percentage)
 # set to a number between 0 and 100 without quotes
 :local usageThreshold 90
 

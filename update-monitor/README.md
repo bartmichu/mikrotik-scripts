@@ -13,10 +13,10 @@ This script uses built-in functionality to check official MikroTik servers and w
 
 
 ## Configuration
-* ```emailRecipient``` (string) - recipient email address
-* ```emailSubject``` (string) - email subject line
-* ```addIdentityToSubject``` (boolean) - set to true if you want the subject line prefixed with system identity
-* ```emailBody``` (string) - email body
+* ```emailRecipient``` (text string between quotes) - recipient email address
+* ```emailSubject``` (text string between quotes) - email subject line
+* ```addIdentityToSubject``` (boolean value without quotes) - set to true if you want the subject line prefixed with system identity
+* ```emailBody``` (text string between quotes) - email body
 
 
 ## Removal

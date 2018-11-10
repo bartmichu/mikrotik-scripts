@@ -12,11 +12,11 @@ This script will send you email notification if used space on your device is gre
 
 
 ## Configuration
-* ```emailRecipient``` (string) - recipient email address
-* ```emailSubject``` (string) - email subject line
-* ```addIdentityToSubject``` (boolean) - set to true if you want the subject line prefixed with system identity
-* ```emailBody``` (string) - email body
-* ```usageThreshold``` (number) - used space threshold (percentage)
+* ```emailRecipient``` (text string between quotes) - recipient email address
+* ```emailSubject``` (text string between quotes) - email subject line
+* ```addIdentityToSubject``` (boolean value without quotes) - set to true if you want the subject line prefixed with system identity
+* ```emailBody``` (text string between quotes) - email body
+* ```usageThreshold``` (number between 0 and 100 without quotes) - used space threshold (percentage)
 
 
 ## Removal
