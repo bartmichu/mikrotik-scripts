@@ -14,11 +14,8 @@ This script uses built-in functionality to check official MikroTik servers and w
 
 ## Configuration
 * ```emailRecipient``` (string) - recipient email address
-
 * ```emailSubject``` (string) - email subject line
-
 * ```addIdentityToSubject``` (boolean) - set to true if you want the subject line prefixed with system identity
-
 * ```emailBody``` (string) - email body
 
 
