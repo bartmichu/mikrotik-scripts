@@ -3,9 +3,10 @@ This script will send you email notification if used space on your device is gre
 
 
 ## Installation
-1. Add content of ```storage-monitor.rsc``` file as a new script named ```storage-monitor``` and select all required policies.
-2. Adjust configuration to your needs and save changes.
-3. Schedule script execution with GUI or use this command:
+1. Configure and test the SMTP server settings (*Tools -> Email*).
+2. Add content of ```storage-monitor.rsc``` file as a new script named ```storage-monitor``` and select all required policies.
+3. Adjust configuration to your needs and save changes.
+4. Schedule script execution with GUI or use this command:
    ```
    /system scheduler add name="storage-monitor" on-event="/system script run storage-monitor" start-time=07:00:00 interval=24h
    ```
