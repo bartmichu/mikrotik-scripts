@@ -29,4 +29,4 @@ Remove both schedule and script named ```storage-monitor``` using GUI or with th
 
 
 ---
-I'm not a native English speaker - any spelling or gramatical correction will be gladly accepted.
+I'm not a native English speaker - any spelling or grammatical correction will be gladly accepted.

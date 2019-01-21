@@ -9,4 +9,4 @@ This script will send you email notification if it finds a newer version of Rout
 
 
 ---
-I'm not a native English speaker - any spelling or gramatical correction will be gladly accepted.
+I'm not a native English speaker - any spelling or grammatical correction will be gladly accepted.
