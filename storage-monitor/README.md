@@ -26,3 +26,7 @@ Remove both schedule and script named ```storage-monitor``` using GUI or with th
 /system scheduler remove "storage-monitor"
 /system script remove "storage-monitor"
 ```
+
+
+---
+I'm not a native English speaker - any spelling or gramatical correction will be gladly accepted.

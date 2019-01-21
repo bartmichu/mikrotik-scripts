@@ -26,3 +26,7 @@ Remove both schedule and script named ```update-monitor``` using GUI or with the
 /system scheduler remove "update-monitor"
 /system script remove "update-monitor"
 ```
+
+
+---
+I'm not a native English speaker - any spelling or gramatical correction will be gladly accepted.
